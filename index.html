@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS "strict mode"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JS 'strict mode'</h1>
+
+      <section>
+        <h2>What is JS "strict mode"</h2>
+        <p>Strict mode was introduced in ES5 and allows us to place our JS code into a "strict" operating context.</p>
+      </section>
+
+      <section>
+        <h2>Benefits of 'strict mode'</h2>
+        <ul class="benefits">
+          <li class="benefits__item">Strict mode eliminates some JavaScript silent errors by changing them to throw errors.</li>
+          <li class="benefits__item">
+            Strict mode fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can
+            sometimes be made to run faster than identical code that’s not strict mode.
+          </li>
+          <li class="benefits__item">
+            It prevents, or throws errors, when relatively “unsafe” actions are taken (such as gaining access to the global object).
+          </li>
+          <li class="benefits__item">
+            Strict mode prohibits us from using variables that are reserved for JavaScript. Examples : 'debugger', 'double', 'public',
+            'char', 'arguments' etc
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How to enable strict mode</h2>
+        <p>The way to enable it is by adding 'use strict' at the top of our JS code</p>~
+        <img src="Screenshot_60.png" alt="How to enable strict mode" />
+      </section>
+
+      <section>
+        <h2>Examples</h2>`
+        <div class="examples">
+          <div class="example">
+            <h3>No more silent errors!</h3>
+            <img class="example__image" src="variable_not_delcared.png" alt="Varaible not declared example" />
+            <img class="example__image" src="variable_not_declared_error.png" alt="Varaible not declared error example" />
+          </div>
+          <div class="example">
+            <h3>Reserved names</h3>
+            <img class="example__image" src="reserved_names.png" alt="Reserved names example" />
+            <img class="example__image" src="reserved_names_error.png" alt="Reserved names error example" />
+          </div>
+          <div class="example">
+            <h3>Duplicating parameters in functions are not allowed</h3>
+            <img class="example__image" src="duplicate_parameters.png" alt="Duplicate parameters example" />
+          </div>
+          <div class="example">
+            <h3>Getters cannot be changed</h3>
+            <img class="example__image" src="getters_cannot_be_changed.png" alt="Getters cannot be changed example" />
+          </div>
+          <div class="example">
+            <h3>
+              More examples and documentation can be found
+              <a
+                href="https://www.geeksforgeeks.org/strict-mode-javascript/#:~:text=Using%20Strict%20mode%20for%20a,body%20before%20any%20other%20statements.&text=Examples%20of%20using%20Strict%20mode,creates%20a%20new%20global%20variable."
+                target="_blank"
+                >here</a
+              >.
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Possible drawbacks after implementation in current projects</h2>
+        <ul class="benefits">
+          <li class="benefits__item">We might run into some issues from examples that we mentioned above and have to correct them.</li>
+          <li class="benefits__item">Testing might take some time after implementation.</li>
+        </ul>
+      </section>
+
+      <footer>
+        <h2>Thank you for your attention!</h2>
+      </footer>
+    </div>
+  </body>
+</html>
